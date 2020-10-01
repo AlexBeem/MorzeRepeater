@@ -7,46 +7,42 @@
 
 template <typename T> 
 Print &operator << (Print &stream, T out)
-	{
-		stream.print(out);
-		return stream;
-	}
+  {
+    stream.print(out);
+    return stream;
+  }
 
 
-// обменивает между собой значения переменных a и b.  
-// аналог инструкции xchg x86
+// РѕР±РјРµРЅРёРІР°РµС‚ РјРµР¶РґСѓ СЃРѕР±РѕР№ Р·РЅР°С‡РµРЅРёСЏ РїРµСЂРµРјРµРЅРЅС‹С… a Рё b.  
+// Р°РЅР°Р»РѕРі РёРЅСЃС‚СЂСѓРєС†РёРё xchg x86
 
 template <typename T>
 void swap(T &a, T &b) {
-	T c(a);
-	a = b;
-	b = c;
+  T c(a);
+  a = b;
+  b = c;
 }
 
 
 
 
 
-// отдает true, если значение переменной aValue
-// лежит в интервале [aMin..aMax] включая границы
+// РѕС‚РґР°РµС‚ true, РµСЃР»Рё Р·РЅР°С‡РµРЅРёРµ РїРµСЂРµРјРµРЅРЅРѕР№ aValue
+// Р»РµР¶РёС‚ РІ РёРЅС‚РµСЂРІР°Р»Рµ [aMin..aMax] РІРєР»СЋС‡Р°СЏ РіСЂР°РЅРёС†С‹
 
 template <typename T>
 bool Between(T aValue, T aMin, T aMax) {
-	if (aMax < aMin) swap(aMin, aMax);
-	return ((aValue >= aMin) && (aValue <= aMax));
+  if (aMax < aMin) swap(aMin, aMax);
+  return ((aValue >= aMin) && (aValue <= aMax));
 }
 
 
 // 
-//  ограничивает значение переменной aValue заданным интервалом [aMinValue..aMaxValue]
+//  РѕРіСЂР°РЅРёС‡РёРІР°РµС‚ Р·РЅР°С‡РµРЅРёРµ РїРµСЂРµРјРµРЅРЅРѕР№ aValue Р·Р°РґР°РЅРЅС‹Рј РёРЅС‚РµСЂРІР°Р»РѕРј [aMinValue..aMaxValue]
 // 
 template <typename T>
 void adjustValue(T &aValue, T aMinValue, T aMaxValue) {
-	if (aMinValue > aMaxValue) swap(aMinValue, aMaxValue);
-	if (aValue < aMinValue) aValue = aMinValue;
-	if (aValue > aMaxValue) aValue = aMaxValue;
+  if (aMinValue > aMaxValue) swap(aMinValue, aMaxValue);
+  if (aValue < aMinValue) aValue = aMinValue;
+  if (aValue > aMaxValue) aValue = aMaxValue;
 }
-
-
-
-

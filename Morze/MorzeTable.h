@@ -76,21 +76,3 @@ const TMorze MorzeArray[] PROGMEM = {
 uint8_t getMorzeCode(const char ASymbol);
 
 uint8_t getSymbolMask(const char ASymbol);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -10,7 +10,7 @@
 #include "Messages.h"
 
 
-static uint8_t TXPin = 10;  // пин передаччика
+static uint8_t TXPin = 13;  // пин передаччика
 
 extern TTimerList TimerList;	// списой таймеров (до 10) паумолчанью
 

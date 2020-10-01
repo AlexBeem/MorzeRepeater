@@ -1,4 +1,4 @@
-﻿#include <Types.h>
+#include "Types.h"
 #include "Messages.h"
 
 
@@ -13,4 +13,3 @@ void SendClassMessage(int16_t AMsg, uint16_t AClassID, int16_t ALoParam, int16_t
 void SendMessage(int16_t AMsg, int16_t ALoParam, int16_t AHiParam) {
 	MessageList.Add(AMsg, ALoParam, AHiParam, 0);
 }
-
