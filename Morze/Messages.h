@@ -3,11 +3,8 @@
 #include "Types.h"
 #include "DEF_Message.h"
 
-
 extern void SendClassMessage(int16_t AMsg, uint16_t AClassID, int16_t ALoParam = 0, int16_t AHiParam = 0);
 extern void SendMessage(int16_t aMsg, int16_t aLoParam = 0, int16_t AHiParam = 0);
-
-
 
 struct TMessage;
 using  PMessage = TMessage *;
@@ -103,4 +100,3 @@ public:
 	}
 
 };
-

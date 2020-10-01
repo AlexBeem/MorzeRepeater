@@ -1,8 +1,6 @@
 #pragma once
 #include "Arduino.h"
 
-
-
 #pragma pack(push,1)
 
 struct TMorze {
@@ -14,8 +12,6 @@ public:
 using PMorze = TMorze *;
 
 #pragma pack(pop)
-
-
 
 const TMorze MorzeArray[] PROGMEM = {
 	{ 'A',0b101 },

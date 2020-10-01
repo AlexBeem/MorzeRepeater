@@ -3,15 +3,12 @@
 #include "Types.h"
 #include "Consts.h"
 
-
-
 template <typename T> 
 Print &operator << (Print &stream, T out)
   {
     stream.print(out);
     return stream;
   }
-
 
 // обменивает между собой значения переменных a и b.  
 // аналог инструкции xchg x86
@@ -22,10 +19,6 @@ void swap(T &a, T &b) {
   a = b;
   b = c;
 }
-
-
-
-
 
 // отдает true, если значение переменной aValue
 // лежит в интервале [aMin..aMax] включая границы

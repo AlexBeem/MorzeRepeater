@@ -46,10 +46,5 @@
 #define msg_EncoderLeft			0x71
 #define msg_EncoderRight		0x72
 #define msg_EncoderButton		0x73
-
 #define msg_ModuleStateChanged  0x80
-
-
 #define msg_DeviceStateChanged  	0xA0    // состояние исполнительного устройства изменилось
-
-
