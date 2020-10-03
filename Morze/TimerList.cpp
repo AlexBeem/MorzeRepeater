@@ -1,4 +1,4 @@
-﻿#include <Arduino.h>
+#include <Arduino.h>
 #include <util/atomic.h>
 #include "TimerList.h"
 #include <avr\interrupt.h>
@@ -78,5 +78,3 @@ ISR(TIMER0_COMPA_vect){
 	TimerList.Tick();
 }
 #endif
-
-
